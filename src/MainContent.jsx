@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 
 export default class MainContent extends Component {
-  state = {};
+  state = { appTitle: "Customers" };
 
   render() {
-    return <div>Hello from Main Content</div>;
+    return (
+      <div>
+        <h4>{this.state.appTitle}</h4>
+      </div>
+    );
   }
 }
